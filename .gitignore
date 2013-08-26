@@ -1,0 +1,2 @@
+db_files/news/*
+!db_files/news/auto_increment
