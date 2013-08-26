@@ -1,0 +1,24 @@
+<h3>Изменение новости</h3>
+
+<form method="post" action="/edit">
+    <div class="form-field">
+        <div class="form-label">
+            <label>Название</label>
+        </div>
+        <div class="form-data">
+            <input class="form-input" type="text" name="title" value="<?=$this->news->title?>">
+        </div>
+    </div>
+
+    <div class="form-field">
+        <div class="form-label">
+            <label>Текст</label>
+        </div>
+        <div class="form-data">
+            <textarea class="form-text" name="text"><?=$this->news->text?></textarea>
+        </div>
+    </div>
+
+    <input type="hidden" name="edit" value="<?=$this->news->id?>">
+    <input type="submit">
+</form>

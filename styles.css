@@ -1,0 +1,99 @@
+#main-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    font-size: 14px;
+}
+
+#main-content {
+    margin-top: 45px;
+    border: 1px solid #C3D0D8;
+}
+
+#main-content h3 {
+    margin-left:15px;
+}
+
+#main-footer {
+    padding-top: 15px;
+    font-size: 11px;
+}
+
+.news-item {
+    padding: 5px 15px;
+    position: relative;
+    border: 1px dotted #C3D0D8;
+}
+
+.news-item-title {
+    margin-bottom: 6px;
+    color: #222D35;
+}
+
+.news-item-title h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.news-item-text {
+    line-height: 16px;
+}
+
+.news-item-date-created {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 11px;
+}
+
+.news-item-buttons, .news-add-button {
+    text-align: right;
+}
+
+.news-add-button {
+    padding: 10px;
+}
+
+.btn {
+    color: #536069;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    padding: 3px 21px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+
+    border: 1px solid #CED3D5;
+}
+
+.form-label {
+    color: #50616D;
+    float: left;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 3px 0 4px;
+    text-align: right;
+    width: 140px;
+}
+
+.form-data {
+    margin: 0 0 0 161px;
+}
+
+.form-field {
+    padding: 0 0 10px;
+}
+
+.form-input, .form-text {
+    border: 1px solid #C3D0D8;
+    border-radius: 1px 1px 1px 1px;
+    height: 16px;
+    line-height: 16px;
+    padding: 3px 8px;
+    width: 206px;
+}
+
+.form-text {
+    min-height: 76px;
+}

@@ -1,0 +1,8 @@
+<?if($this->profilerLogs):?>
+<h2>Profiler</h2>
+<table>
+<?foreach($this->profilerLogs as $log):?>
+    <tr><td><?=$log[0]?></td><td><?=$log[1]?></td></tr>
+<?endforeach;?>
+</table>
+<?endif;?>
