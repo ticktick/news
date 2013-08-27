@@ -21,6 +21,7 @@ class Base_DB_DriverFile extends Base_DB_DriverBase implements Base_DB_Interface
     public function getAll($table, $limit, $offset=0){
         $dir = new DirectoryIterator($this->getDirName($table));
         $files = array();
+        /** @var $file DirectoryIterator */
         foreach ($dir as $file) {
             if (in_array($file->getFilename(), array('.', '..', $this->autoIncrementFile))) {
                 continue;

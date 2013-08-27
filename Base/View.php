@@ -44,7 +44,7 @@ class Base_View{
 
     public function __isset($key)
     {
-        if ('_' != Utf::substr($key, 0, 1)) {
+        if ('_' != substr($key, 0, 1)) {
             return isset($this->$key);
         }
 

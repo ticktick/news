@@ -38,7 +38,7 @@ class Base_Application
             $bottomContent = $this->controller->getBottomContent();
         } catch (Base_Exception_Redirect $e) {
             header('location: '.$e->getUrl());
-            return;
+            return true;
         } catch (Exception $e) {
             trigger_error($e->getMessage(), E_USER_WARNING);
             header('HTTP/1.0 500 Internal Server Error');
@@ -46,7 +46,7 @@ class Base_Application
         }
 
         $this->render($content);
-        if ($bottomContent) {
+        if (!empty($bottomContent)) {
             $this->render($bottomContent);
         }
         return true;
